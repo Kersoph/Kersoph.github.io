@@ -1,0 +1,103 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #fff7e4;
+}
+
+/* Bootstrap classes */
+
+.btn-discord {
+  background-color: #7289DA;
+}
+
+.btn-discord img {
+  max-width: 125px;
+}
+
+/*--- navigation bar ---*/
+
+.navbar {
+  background:#70695c;
+}
+
+.nav-link,
+.navbar-brand {
+  color: #FFF;
+  cursor: pointer;
+}
+
+.nav-link {
+  margin-right: 1em !important;
+}
+
+.nav-link:hover {
+  color: #FFF;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+#full-width-image-container img {
+  display: block;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+#description {
+  text-align: center;
+  padding-top: 50px;
+}
+
+#description h1 {
+  color: #2f2b22;
+}
+
+#description p {
+  color: #2f2b22;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+#features {
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+}
+
+#feature-title {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+#features img {
+  -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 16px;
+}
+
+.video-container {
+  margin-bottom: 50px;
+}
+
+.page-footer {
+  background-color: #70695c;
+  color: #FFF;
+  padding: 60px 0 30px;
+}
+
+.page-footer a {
+  color: #FFF;
+}
+
+.footer-copyright {
+  color: #FFF;
+  padding: 40px 0;
+}
