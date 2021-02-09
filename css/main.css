@@ -6,12 +6,40 @@ body {
 
 /* Bootstrap classes */
 
-.btn-discord {
+.btn-social-discord {
   background-color: #7289DA;
+  margin: 10px;
 }
 
-.btn-discord img {
-  max-width: 125px;
+.btn-social-discord img {
+  max-height: 64px;
+}
+
+.btn-social-youtube {
+  background-color: #FF0000;
+  margin: 10px;
+}
+
+.btn-social-youtube img {
+  max-height: 64px;
+}
+
+.btn-social-twitter {
+  background-color: #1d9bf0;
+  margin: 10px;
+}
+
+.btn-social-twitter img {
+  max-height: 64px;
+}
+
+.btn-social-reddit {
+  background-color: #ff4500;
+  margin: 10px;
+}
+
+.btn-social-reddit img {
+  max-height: 64px;
 }
 
 /*--- navigation bar ---*/
