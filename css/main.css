@@ -42,6 +42,15 @@ body {
   max-height: 64px;
 }
 
+.btn-social-steam {
+  background-color: #2C2E35;
+  margin: 10px;
+}
+
+.btn-social-steam img {
+  max-height: 64px;
+}
+
 /*--- navigation bar ---*/
 
 .navbar {
