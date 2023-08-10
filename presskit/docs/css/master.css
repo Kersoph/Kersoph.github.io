@@ -415,6 +415,20 @@ a:hover {
     }
 }
 
+@media (min-width: 800px) {
+    .logo_small {
+        max-width: 12%;
+        max-height: 300px;
+    }
+}
+
+@media (min-width: 800px) {
+    .logo_high {
+        max-width: 25%;
+        max-height: 300px;
+    }
+}
+
 /* ---------------------------------------------------------- *\
  * Components - Video player.
 \* ---------------------------------------------------------- */
