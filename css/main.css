@@ -15,6 +15,15 @@ body {
   max-height: 64px;
 }
 
+.btn-social-wiki {
+  background-color: #264239;
+  margin: 10px;
+}
+
+.btn-social-wiki img {
+  max-height: 64px;
+}
+
 .btn-social-youtube {
   background-color: #FF0000;
   margin: 10px;
