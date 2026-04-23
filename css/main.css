@@ -1,7 +1,7 @@
 body {
   padding: 0;
   margin: 0;
-  background: #fff7e4;
+  background: #FFF7E4;
 }
 
 /* Bootstrap classes */
@@ -66,14 +66,33 @@ body {
   background:#70695c;
 }
 
+.breadcrumb-item+.breadcrumb-item::before {
+  color: #FFF7E4;
+  font-size: 1.25rem;
+}
+
 .nav-link,
 .navbar-brand {
   color: #FFF;
+}
+
+@media (max-width: 360px) {
+  .navbar-brand {
+    font-size: 5vw;
+  }
+
+  .breadcrumb-item+.breadcrumb-item::before {
+    font-size: 5vw;
+  }
+}
+
+a.nav-link,
+a.navbar-brand {
   cursor: pointer;
 }
 
 .nav-link {
-  margin-right: 1em !important;
+  margin-right: 1em;
 }
 
 .nav-link:hover {
@@ -90,6 +109,30 @@ body {
   width: 100%;
   height: auto;
   max-width: 100%;
+}
+
+#full-height-image-container {
+  overflow: hidden;
+  text-align: center;
+}
+
+#full-height-image-container img {
+  display: block;
+  margin: auto;
+  width: auto;
+  height: 100%;
+}
+
+#full-height-image-container .overlay-title {
+  position: absolute;
+  top: 35%;
+  translate: 0 -50%;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 10vw;
+  font-weight: normal;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
 
 #description {
