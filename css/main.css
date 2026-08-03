@@ -183,10 +183,6 @@ img.horizontal-fades {
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-
-  @media (min-width: 768px) {
-    display: none;
-  }
 }
 
 .socials.sticky {
@@ -264,6 +260,7 @@ a.game-tile:focus  > h3{
 .page-footer .steam-widget {
   display: block;
   position: relative;
+  margin-bottom: 1.5rem;
 }
 
 .page-footer .steam-widget > .hover {
@@ -278,10 +275,6 @@ a.game-tile:focus  > h3{
 .page-footer .steam-widget:hover > .hover,
 .page-footer .steam-widget:focus > .hover {
   visibility: visible;
-}
-
-.page-footer .steam-widget + .steam-widget {
-  margin-top: 1.5rem;
 }
 
 .page-footer iframe {
