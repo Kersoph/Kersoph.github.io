@@ -103,6 +103,24 @@ a.navbar-brand {
   justify-content: flex-end;
 }
 
+.navbar .dropdown-menu {
+  background: #70695c;
+  margin-top: 0.4375rem; /* Align to bottom of .navbar */
+  border-radius: 0;
+  border: none;
+}
+
+.navbar .dropdown-menu > .dropdown-item {
+  color: #FFF;
+}
+
+/* Disable Bootstrap styling - following the surrounding navbar styling */
+.navbar .dropdown-menu > .dropdown-item:hover,
+.navbar .dropdown-menu > .dropdown-item:active,
+.navbar .dropdown-menu > .dropdown-item:focus {
+  background: none;
+}
+
 #full-width-image-container img {
   display: block;
   margin: auto;
