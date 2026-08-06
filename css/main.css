@@ -279,6 +279,13 @@ a.game-tile:focus  > h3{
   display: block;
   position: relative;
   margin-bottom: 1.5rem;
+
+  overflow: clip;
+  padding-bottom: 3px;
+}
+
+.page-footer .steam-widget > .normal {
+  filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.4));
 }
 
 .page-footer .steam-widget > .hover {
