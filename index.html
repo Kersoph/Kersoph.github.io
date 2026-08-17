@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-  
-    <title>Of Life and Land</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-  
-  </head>
-<body>
+<head>
 
-<nav class="navbar navbar-expand-md">
-  <a class="navbar-brand" href="#">Of Life and Land</a>
+  <title>Kerzoven Game Studio</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+
+</head>
+<body id="kerzoven">
+
+<nav class="navbar navbar-expand-md sticky-top">
+  <ol class="breadcrumb bg-transparent text-light m-0 p-0">
+    <li class="breadcrumb-item"><a class="navbar-brand mr-0" href="">Kerzoven</a></li>
+  </ol>
   <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="main-navigation">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="./index.html">Home</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="https://www.kickstarter.com/projects/kerzoven/circle-of-kerzoven?ref=53gzzi">Kickstarter</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="gamesDropdown" role="button"
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Games
+        </a>
+        <div class="dropdown-menu" aria-labelledby="gamesDropdown">
+          <a class="dropdown-item" href="games/of-life-and-land/index.html">Of Life And Land</a>
+          <a class="dropdown-item" href="games/if-red-then-stop/index.html">If Red Then Stop</a>
+        </div>
       </li>
       <li class="nav-item">
         <a href="dsg.html" class="nav-link">Privacy</a>
@@ -34,97 +44,118 @@
   </div>
 </nav>
 
-<div id="full-width-image-container" class="container-fluid">
-  <div class="row">
-    <img src="images/TitleA.jpg" alt="Of Life and Land">
-  </div>
+<div id="full-height-image-container" class="position-relative">
+  <img src="images/kerzoven-banner.png" alt="Kerzoven" class="horizontal-fades">
+  <h1 class="overlay-title">Kerzoven</h1>
 </div>
 
-<div id="description" class="container">
-  <div class="row">
-    <div class="col-xs-12">
-      <h1 class="page-header">A charming settlement builder with a rich nature simulation</h1>
-      <p><b>Take the role of a leader</b> delegated to build new settlements in remote, unknown corners of the empire. In those forgotten places, nature is wild and legends are more real and vivid than one may think. Experience the challenges of different seasons and climates in a world, where every animal and every plant tries to <b>find their place in nature,</b> while you lead your villagers. How much will you share with nature? Will you strive for balance or even enforce the extinction of certain animals? Follow the old paths… or find your own.</p>
-      <a href="https://store.steampowered.com/app/1733110/Circle_of_Kerzoven/?utm_source=website" target="_blank" class="btn btn-social-steam">
-        <img src="images/Steam_Logo_I.png" alt="Steam logo" class="img-responsive">
+<div id="wrapper">
+  <!--  <a id="games"></a>-->
+  <main id="games" class="container mt-4 mb-3">
+    <div id="description" class="row pt-0 pb-3">
+      <div class="col-12">
+        <h2 class="page-header h1">Simulation games with deep, emergent gameplay</h2>
+      </div>
+    </div>
+
+    <aside class="row socials inline d-md-none">
+      <a href="https://store.steampowered.com/developer/Kerzoven?utm_source=website" target="_blank"
+         class="btn btn-social-steam">
+        <img src="images/brands/Steam_Logo_I.png" alt="Steam logo" class="img-responsive">
       </a>
       <a href="https://discord.gg/XvPb6sKYpm" target="_blank" class="btn btn-social-discord">
-        <img src="images/Discord-Logo-White.png" alt="Discord logo" class="img-responsive">
-      </a>
-      <a href="https://kerzoven.wiki.gg/wiki/Of_Life_and_Land_Wiki" target="_blank" class="btn btn-social-wiki">
-        <img src="images/Wiki_White.png" alt="Wiki logo" class="img-responsive">
+        <img src="images/brands/Discord-Logo-White.png" alt="Discord logo" class="img-responsive">
       </a>
       <a href="https://www.reddit.com/user/Kersoph" target="_blank" class="btn btn-social-reddit">
-        <img src="images/Reddit.png" alt="Reddit logo" class="img-responsive">
+        <img src="images/brands/Reddit.png" alt="Reddit logo" class="img-responsive">
       </a>
       <a href="https://twitter.com/kerzoven" target="_blank" class="btn btn-social-twitter">
-        <img src="images/TwitterSocialIconsSquareBlue.png" alt="Twitter logo" class="img-responsive">
+        <img src="images/brands/TwitterSocialIconsSquareBlue.png" alt="Twitter logo" class="img-responsive">
       </a>
       <a href="https://www.youtube.com/user/Kersoph" target="_blank" class="btn btn-social-youtube">
-        <img src="images/youtube_social_square_red.png" alt="YouTube logo" class="img-responsive">
+        <img src="images/brands/youtube_social_square_red.png" alt="YouTube logo" class="img-responsive">
+      </a>
+    </aside>
+
+    <div class="row">
+      <a href="games/of-life-and-land/index.html" class="game-tile col-lg-6 col-sm-12">
+        <h3 class="game-title">Of Life and Land</h3>
+        <img src="games/of-life-and-land/images/Cover.jpg" class="img-fluid">
+        <p>A charming <b>settlement-building strategy game</b> paired with a rich <b>simulation</b> experience.
+          Every animal and plant strives to find its place in nature while you lead your villagers to their future.
+          Expand to different regions and trade with local factions to gain needed resources.</p>
+      </a>
+
+      <a href="games/if-red-then-stop/index.html" class="game-tile col-lg-6 col-sm-12">
+        <h3 class="game-title">If Red Then Stop</h3>
+        <img src="games/if-red-then-stop/images/Cover.jpg" class="img-fluid">
+        <p><b>Program</b> traffic lights, barriers, and more to solve your city’s traffic problems! Improve your
+          coding
+          skills by
+          learning to control time-dependent processes with <b>realistic state machines.</b></p>
       </a>
     </div>
-  </div>
-</div>
 
-<div id="features" class="container">
-  <div class="row">
-    <div class="col-lg-4 col-md-4 col-sm-12">
-      <h3 class="feature-title">Build Your Economy</h3>
-      <img src="images/Economy2.jpg" class="img-fluid">
-      <p><b>Manage the acquisition, refinement, and distribution of resources.</b> Goods must be transported to desired locations by someone who has the time and space to do it.</p>
+    <hr/>
+
+    <div id="about" class="row">
+      <div class="text-container">
+        Team Kerzoven, a small based team based in Switzerland. Their passion lies in creating deeply simulated games
+        where the players can learn more about reality. After they released their first game
+        <a href="games/of-life-and-land/index.html">Of Life and Land</a> in 2025, a city builder paired with a rich
+        nature simulation, Team Kerzoven started working on its second game,
+        <a href="games/if-red-then-stop/index.html">If Red Then Stop</a>.
+      </div>
     </div>
-    <div class="col-lg-4 col-md-4 col-sm-12">
-      <h3 class="feature-title">Care For All Living Things</h3>
-      <img src="images/Needs2.jpg" class="img-fluid">
-      <p><b>Manage the needs of the citizens.</b> They are “alive” and have a specific home, workplace, and broad range of needs and goals. But animals also look for food, get thirsty, sleepy, form groups, look for social interactions, and try to find their place in nature. Even plants need water and the right temperature in order to survive.</p>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12">
-      <h3 class="feature-title">Find Balance (Or Not)</h3>
-      <img src="images/Hunting.jpg" class="img-fluid">
-      <p><b>Humans share the same space and resources with nature, and they influence each other.</b> While in the beginning the influence of the humans is insignificant, it gets more and more important when the city - and its needs - grow. There is a risk that some animals or groups will become extinct or explosively multiply, depending on your actions.</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-lg-4 col-md-4 col-sm-12">
-      <h3 class="feature-title">Observe The Vibrant World</h3>
-      <img src="images/Desert.jpg" class="img-fluid">
-      <p><b>Seasons and weather affect the gameplay.</b> Certain plants grow only in certain seasons, need more water on hot days or freeze during cold periods. Humans and animals need more energy to keep warm in winter or more water in summer to keep cool. In extreme cases, they suffer from exhaustion and may even be harmed.</p>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12">
-      <h3 class="feature-title">Take Your Time</h3>
-      <img src="images/Nighttime.jpg" class="img-fluid">
-      <p><b>You set the pace.</b> Pause the game, speed it up or slow it down whenever you want. Nature is robust, and your villagers develop more complex needs as you progress.</p>
-    </div>
-    <div class="col-lg-4 col-md-4 col-sm-12">
-    <h3 class="feature-title">Build Your Own Scenarios</h3>
-      <img src="images/Editor2.jpg" class="img-fluid">
-      <p><b>Create your own maps and scenarios in the editor.</b> You can change the landscape, generate plants, and place animals. You can also connect watercourses and create new paths for travellers. Add new maps or link existing ones together to a new world.</p>
-    </div>
-  </div>
+  </main>
+  <aside class="socials sticky .d-none .d-sm-flex">
+    <a href="https://store.steampowered.com/developer/Kerzoven?utm_source=website" target="_blank"
+       class="btn btn-social-steam">
+      <img src="images/brands/Steam_Logo_I.png" alt="Steam logo" class="img-responsive">
+    </a>
+    <a href="https://discord.gg/XvPb6sKYpm" target="_blank" class="btn btn-social-discord">
+      <img src="images/brands/Discord-Logo-White.png" alt="Discord logo" class="img-responsive">
+    </a>
+    <a href="https://www.reddit.com/user/Kersoph" target="_blank" class="btn btn-social-reddit">
+      <img src="images/brands/Reddit.png" alt="Reddit logo" class="img-responsive">
+    </a>
+    <a href="https://twitter.com/kerzoven" target="_blank" class="btn btn-social-twitter">
+      <img src="images/brands/TwitterSocialIconsSquareBlue.png" alt="Twitter logo" class="img-responsive">
+    </a>
+    <a href="https://www.youtube.com/user/Kersoph" target="_blank" class="btn btn-social-youtube">
+      <img src="images/brands/youtube_social_square_red.png" alt="YouTube logo" class="img-responsive">
+    </a>
+  </aside>
 </div>
 
 <footer class="page-footer">
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-9 col-sm-12">
-        <br/>
-          <a href="https://store.steampowered.com/app/1733110/Circle_of_Kerzoven/?utm_source=website" target="_blank">
-            <img src="images/StaticWidget.png" alt="Steam image" class="img-fluid">
-          </a>
-          <br/>
-          <br/>
-          <a href="https://store.steampowered.com/app/3987060/If_Red_Then_Stop/?utm_source=website" target="_blank">
-            <img src="images/StaticWidget2.png" alt="Steam image" class="img-fluid">
-          </a>
-          <!--iframe src="https://store.steampowered.com/widget/1733110/" frameborder="0" width="100%" height="190"></iframe-->
-          <!--iframe src="https://store.steampowered.com/widget/3987060/" frameborder="0" width="100%" height="190"></iframe-->
+        <a href="https://store.steampowered.com/app/1733110/Circle_of_Kerzoven/?utm_source=website"
+           class="steam-widget" target="_blank">
+          <img src="games/of-life-and-land/images/StaticWidgetEUR.png" alt="Buy Of Life and Land on Steam"
+               class="img-fluid normal">
+          <img src="games/of-life-and-land/images/StaticWidgetEURHover.png" alt="" aria-hidden="true"
+               class="img-fluid hover">
+        </a>
+        <!--<iframe src="https://store.steampowered.com/widget/1733110/" frameborder="0" width="100%" height="190"></iframe>-->
+
+        <a href="https://store.steampowered.com/app/3987060/If_Red_Then_Stop/?utm_source=website"
+           class="steam-widget" target="_blank">
+          <img src="games/if-red-then-stop/images/StaticWidget.png" alt="If Red Then Stop on Steam"
+               class="img-fluid normal">
+          <img src="games/if-red-then-stop/images/StaticWidgetHover.png" alt="" aria-hidden="true"
+               class="img-fluid hover">
+        </a>
+        <!--<iframe src="https://store.steampowered.com/widget/3987060/" frameborder="0" width="100%" height="190"></iframe>-->
       </div>
       <div class="col-lg-2 col-md-3 col-sm-6">
         <h6 class="text-uppercase font-weight-bold">Links</h6>
-        <a href="https://store.steampowered.com/app/1733110/Circle_of_Kerzoven/?utm_source=website" target="_blank">Steam</a>
+        <a href="https://store.steampowered.com/developer/Kerzoven?utm_source=website"
+           target="_blank">Steam</a>
         <br/><a href="https://discord.gg/XvPb6sKYpm" target="_blank">Discord</a>
-        <br/><a href="https://kerzoven.wiki.gg/wiki/Of_Life_and_Land_Wiki" target="_blank">Wiki</a>
+        <br/><a href="https://kerzoven.wiki.gg/" target="_blank">Wiki</a>
         <br/><a href="https://www.reddit.com/user/Kersoph" target="_blank">Reddit</a>
         <br/><a href="https://twitter.com/kerzoven" target="_blank">Twitter</a>
         <br/><a href="https://www.youtube.com/user/Kersoph" target="_blank">YouTube</a>
@@ -132,26 +163,26 @@
         <br/>
       </div>
     </div>
-    
+
     <div class="row">
       <div class="col-lg-8 col-md-9 col-sm-12">
-      <h6 class="text-uppercase font-weight-bold">Additional Information</h6>
-      <p>The planned target platforms are desktop Windows and Linux with translations in English, German, French, Italian, Spanish,Portuguese, Simplified Chinese, Japanese, Korean, Russian and Polish. More support might be added later.</p>
-      <p>Of Life and Land is developed by Marco Burri with the Godot Engine. He started developing games over ten years ago besides his career as an industrial automation technician and later software engineer. One of his most famous game is Legend of Ahssûn, where he was working in the core team as a generalist and is still supporting the project today.</p>
-      <p>The project with the working title Circle of Kerzoven was named Of Life and Land in 2023.</p>
+        <h6 class="text-uppercase font-weight-bold"></h6>
+        <p></p>
+      </div>
+      <div class="col-lg-2 col-md-3 col-sm-6">
+        <h6 class="text-uppercase font-weight-bold"></h6>
+      </div>
     </div>
-    <div class="col-lg-2 col-md-3 col-sm-6">
-      <h6 class="text-uppercase font-weight-bold">Supported by</h6>
-      <img src="images/PH_M2.png" class="img-fluid">
-      <h6 class="text-uppercase font-weight-bold">Funded with</h6>
-      <a href="https://www.kickstarter.com/projects/kerzoven/circle-of-kerzoven" target="_blank"><img src="images/kickstarter-logo-green.png" class="img-fluid"></a>
+
+    <div class="footer-copyright text-center">
+      <small>
+        © 2025 Copyright: Marco Burri and
+        <a href="https://www.linkedin.com/in/juanpablomarinjimenez/" target="_blank">Juan Pablo Marín Jiménez</a>
+        <br/>Contact: Kerzoven GmbH, Aarauerstrasse 17, 5023 Biberstein, Switzerland, KerzovenCommunity@pm.me
+        <br/><a href="dsg.html">Privacy</a>
+      </small>
     </div>
   </div>
-  
-  <div class="footer-copyright text-center">© 2025 Copyright: Marco Burri and
-    <a href="https://www.linkedin.com/in/juanpablomarinjimenez/" target="_blank">Juan Pablo Marín Jiménez</a>
-    <br/>Contact: Kerzoven GmbH, Aarauerstrasse 17, 5023 Biberstein, Switzerland, KerzovenCommunity@pm.me
-    <br/><a href="dsg.html">Privacy</a></div>
 </footer>
 
 <script src="js/jquery-3.3.1.slim.min.js" defer></script>
